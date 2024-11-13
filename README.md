@@ -104,3 +104,15 @@ Nota: Isso não deve ser feito sem uma boa razão, pois comprometer a chave priv
 ```bash
 dfx identity export
 ```
+
+Remover uma identidade existente:
+
+```bash
+dfx identity remove <nome_da_identidade>
+```
+
+Renomear uma identidade existente:
+
+```bash
+dfx identity rename <nome_antigo> <nome_novo>
+```
