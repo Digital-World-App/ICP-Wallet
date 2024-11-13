@@ -57,8 +57,50 @@ dfx deploy
 
 Isso criará um "canister" – uma unidade de armazenamento e execução no Internet Computer – que servirá como sua carteira.
 
-```bash
-```
+Gerenciamento de Identidades
+Para interagir com o canister, é necessário criar um Identificador Principal (Principal ID). Este identificador permite autenticação e acesso a sua carteira.
+
+Criação de um Identificador:
 
 ```bash
+dfx identity new my-identity
+```
+
+Listagem de Identidades:
+
+Para confirmar o ID criado, use:
+
+```bash
+dfx identity list
+```
+
+Definir a identidade ativa:
+
+```bash
+dfx identity use <nome_da_identidade>
+```
+
+Exibir a identidade ativa atual:
+
+```bash
+dfx identity whoami
+```
+
+Mostrar o Principal associado à identidade atual:
+
+```bash
+dfx identity get-principal
+```
+
+Importar uma identidade de um arquivo PEM:
+
+```bash
+dfx identity import <arquivo_pem>
+```
+
+Exportar a chave privada (PEM) da identidade atual:
+Nota: Isso não deve ser feito sem uma boa razão, pois comprometer a chave privada pode resultar em perdas.
+
+```bash
+dfx identity export
 ```
